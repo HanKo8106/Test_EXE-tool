@@ -1,0 +1,34 @@
+﻿<Window x:Class="Test_EXE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Test EXE" Height="500" Width="650">
+    <Canvas>
+        <GroupBox Header="exe" Height="133" Canvas.Left="15" Canvas.Top="10" Width="609">
+            <Canvas>
+                <Label Content="EXE Name : " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="16" Canvas.Top="20"/>
+                <TextBox x:Name="TbExe" HorizontalAlignment="Left" Height="44" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Text="Setup.exe" Canvas.Left="100" Canvas.Top="20"/>
+                <Label Content="Return Code :" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="16" Canvas.Top="80"/>
+                <TextBox x:Name="TbExitCode" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="110" Canvas.Top="80"/>
+
+                <Button x:Name="BtnBowse" Content="Browse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="512" Canvas.Top="20" Click="BtnBowse_Click"/>
+                <Button x:Name="BtnClear" Content="Clear" Canvas.Left="512" Canvas.Top="80" Width="75" Click="BtnClear_Click" />
+            </Canvas>
+        </GroupBox>
+
+        <!--UI-->
+        <Label Content="UI" Canvas.Left="156" Canvas.Top="170"/>
+        <Button x:Name="BtnRun" Content="Run EXE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194.583" Height="60" Canvas.Left="156.227" Canvas.Top="200" Click="BtnRun_Click"/>
+
+        <!--Exe-->
+        <Label Content="Dos(win 32)" Canvas.Left="400" Canvas.Top="170"/>
+        <Button x:Name="BtnDosRun" Content="Run Win 32" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194.583" Height="60"  Canvas.Left="400" Canvas.Top="200" Click="BtnDosRun_Click"/>
+
+
+        <Button x:Name="BtnKill" Content="Kill EXE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="67.147" Height="92.157"  Canvas.Left="40.182" Canvas.Top="167.843" Click="BtnKill_Click"/>
+        <Button x:Name="BtnRun_Copy" Content="Run EXE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="555" Height="60" Canvas.Left="40" Canvas.Top="298" Click="BtnRun2_Click"/>
+
+
+
+
+    </Canvas>
+</Window>
